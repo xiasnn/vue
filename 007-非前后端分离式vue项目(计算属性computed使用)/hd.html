@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算属性computed使用</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="reduce">减少</button>
+        <div v-text="num"></div>
+        <button @click="add">增加</button>
+        <!-- 计算属性和data里面属性使用方式一样{{}}或者v-text="" -->
+        <div v-if="error" style="background-color:red;color:white;">提示：{{error}}</div>
+        <div v-if="error1" style="background-color:red;color:white;">{{error1}}</div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.29/vue.global.prod.min.js"></script>
+    <script src="./hd.js"></script>
+</body>
+</html>

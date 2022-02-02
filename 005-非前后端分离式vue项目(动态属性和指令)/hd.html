@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态属性和指令</title>
+</head>
+<body>
+    <div id="app">
+        <div :id="id">{{name}}</div>    <!--  相当于 <div v-bind:id="id">{{name}}</div>  -->
+
+        <!-- 花括号内可以是表达式 -->
+        <div>{{id == 1 ? "后盾人" : "hdms"}}</div>
+
+        <!-- v-show控制是否显示 -->
+        <p v-show="false">xiasnn</p>
+        <p v-show="true">xiaxia</p>
+
+        <!-- v-once只渲染一次，之后数据再发生变化，不会更新 -->
+        <div v-once>{{name}}</div>
+
+        <!-- 控制属性名发生变化 -->
+        <a :[arg]="param">百度</a>    <!--  相当于 <div v-bind:[arg]="param">百度</div>  -->
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.29/vue.global.prod.min.js"></script>
+    <script src="./hd.js"></script>
+</body>
+</html>

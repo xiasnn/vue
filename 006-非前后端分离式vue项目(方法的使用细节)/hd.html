@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方法的使用细节</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-on:click可以简写为@click -->
+        <button @click="reduce">减少</button>
+        <div v-text="num"></div>
+        <button @[event]="add">增加</button>
+        <div v-if="error" style="background-color:red;color:white;">提示：{{error}}</div>
+
+        <!-- 在方法中阻止默认行为 -->
+        <a href="http://www.baidu.com" @click="go">百度</a><br>
+        <!-- 在事件上阻止默认行为 -->
+        <a href="http://www.baidu.com" @click.prevent="skip">百度</a>
+
+        <!-- 方法有参数 -->
+        <p @click="show($event,'后盾人')">hdms</p>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.29/vue.global.prod.min.js"></script>
+    <script src="./hd.js"></script>
+</body>
+</html>
