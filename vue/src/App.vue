@@ -3,8 +3,16 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import ClassComponent from "./components/classComponent.vue"
 import MoreStyles from "./components/moreStyles.vue"
+import ClassList from "./components/classList.vue"
+import StyleComponent from "./components/styleComponent.vue"
+import IfComment from "./components/ifComment.vue"
+import VForComment from "./components/vForComment.vue"
+import LessonFor from "./components/lessonFor.vue"
+import ArrComponent from "./components/ArrComponent.vue"
+import EventComponent from "./components/EventComponents.vue"
+import EventFixComponent from "./components/EventFixComponent.vue"
 export default{
-    components:{ClassComponent,MoreStyles},
+    components:{ClassComponent,MoreStyles,ClassList,StyleComponent,IfComment,VForComment,LessonFor,ArrComponent,EventComponent,EventFixComponent},
     data() {
         return {
             title: "后盾人"
@@ -14,10 +22,37 @@ export default{
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <div class="hd xia">{{title}}</div>
-  <ClassComponent />
-  <MoreStyles />
+  <!-- <div class="hd xia">{{title}}</div> -->
+
+  <!-- 组件样式隔离 -->
+  <!-- <ClassComponent /> -->
+
+  <!-- css样式的多种处理 -->
+  <!-- <MoreStyles /> -->
+
+  <!-- 控制列表的删除状态 -->
+  <!-- <ClassList /> -->
+
+  <!-- 组件样式与Style行级样式 -->
+  <!-- <StyleComponent class="xiasnn" /> -->
+
+  <!-- v-if与v-show的使用区别 -->
+  <!-- <IfComment /> -->
+
+  <!-- v-for使用细节 -->
+  <!-- <VForComment /> -->
+
+  <!-- 课程排序案例 -->
+  <!-- <LessonFor /> -->
+
+  <!-- vue.js对数组的方法变更 -->
+  <!-- <ArrComponent /> -->
+
+  <!-- event事件在vue.js中的使用 -->
+  <!-- <EventComponent /> -->
+
+  <!-- vue.js事件修饰符 -->
+  <EventFixComponent />
 </template>
 
 <style>
