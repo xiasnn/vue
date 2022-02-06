@@ -11,8 +11,10 @@ import LessonFor from "./components/lessonFor.vue"
 import ArrComponent from "./components/ArrComponent.vue"
 import EventComponent from "./components/EventComponents.vue"
 import EventFixComponent from "./components/EventFixComponent.vue"
+import KeywordComponent from "./components/KeywordComponent.vue"
+import FormComponent from "./components/FormComponent.vue"
 export default{
-    components:{ClassComponent,MoreStyles,ClassList,StyleComponent,IfComment,VForComment,LessonFor,ArrComponent,EventComponent,EventFixComponent},
+    components:{ClassComponent,MoreStyles,ClassList,StyleComponent,IfComment,VForComment,LessonFor,ArrComponent,EventComponent,EventFixComponent,KeywordComponent,FormComponent},
     data() {
         return {
             title: "后盾人"
@@ -52,7 +54,13 @@ export default{
   <!-- <EventComponent /> -->
 
   <!-- vue.js事件修饰符 -->
-  <EventFixComponent />
+  <!-- <EventFixComponent /> -->
+
+  <!-- vue.js中的键盘事件 -->
+  <!-- <KeywordComponent /> -->
+
+  <!-- vue.js表单的基本使用 -->
+  <FormComponent />
 </template>
 
 <style>
